@@ -44,5 +44,7 @@ function colWidths(rows) {
 
 module.exports = {
   rowHeights: rowHeights,
-  colWidths: colWidths
+  colWidths: colWidths,
+  String: String,
+  Array: Array
 };

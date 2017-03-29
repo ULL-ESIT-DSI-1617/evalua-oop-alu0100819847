@@ -1,4 +1,5 @@
-
+String = require('./lyingoutatable.js').String
+Array = require('./lyingoutatable.js').Array
 // TextCell Class
 function TextCell(text) {
   this.text = text.split("\n");
