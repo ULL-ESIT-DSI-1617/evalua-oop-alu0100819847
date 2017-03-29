@@ -1,3 +1,4 @@
+"use strict"
 String = require('./lyingoutatable.js').String
 Array = require('./lyingoutatable.js').Array
 

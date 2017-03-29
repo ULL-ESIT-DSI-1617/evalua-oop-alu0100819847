@@ -1,3 +1,4 @@
+"use strict"
 var rowHeights = require('./lyingoutatable.js').rowHeights
 var colWidths = require('./lyingoutatable').colWidths
 
