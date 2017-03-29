@@ -1,6 +1,6 @@
 "use strict"
 var dt = require('./DrawTable.js');
-var dataTable = require('./dataTable.js').dataTable
+var dataTable = require('./DataTable.js').dataTable
 var drawTable = dt.drawTable
 
 function drawIt(data) {
