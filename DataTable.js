@@ -1,5 +1,5 @@
 "use strict"
-var RTextCell = require('./RtextCell.js').RTextCell
+var RTextCell = require('./RTextCell.js').RTextCell
 var TextCell = require('./TextCell.js').TextCell
 var UnderlinedCell = require('./underlinedcell.js').UnderlinedCell
 
