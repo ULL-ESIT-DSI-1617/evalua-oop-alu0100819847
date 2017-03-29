@@ -1,9 +1,3 @@
-/*var uc = require('./underlinedcell.js')
-var di = require('./drawIt.js')
-var dt = require('./DrawTable.js')
-var rt = require('./RtextCell.js')
-var tc = require('./TextCell.js')
-*/
 
 // Utils: Monkey Patching
 String.prototype.repeat = function(times) {

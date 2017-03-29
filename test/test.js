@@ -1,6 +1,6 @@
 // Testing drawIt
 var dt = require("../lyingoutatable.js");
-var drawIt = dt.drawIt;
+var drawIt = require('../drawIt.js').drawIt;
 
 var MOUNTAINS = [
   {name: "Kilimanjaro\nMontaña mágica", height: 5895, country: "Tanzania"},
@@ -12,16 +12,16 @@ var MOUNTAINS = [
   {name: "Popocatepetl", height: 5465, country: "Mexico"}
 ];
 
-var expected = 
-`name           height country      
+var expected =
+`name           height country
 -------------- ------ -------------
-Kilimanjaro      5895 Tanzania     
-Montaña mágica                     
-Everest          8848 Nepal        
-                      País lejano  
-Mount Fuji       3776 Japan        
-Mont Blanc       4808 Italy/France 
-Vaalserberg       323 Netherlands  
+Kilimanjaro      5895 Tanzania
+Montaña mágica
+Everest          8848 Nepal
+                      País lejano
+Mount Fuji       3776 Japan
+Mont Blanc       4808 Italy/France
+Vaalserberg       323 Netherlands
 Denali           6168 United States
 Popocatepetl     5465 Mexico       `;
 
@@ -35,8 +35,8 @@ describe("drawIt", function() {
   })
 });
 
-var TextCell = dt.TextCell;
-var drawTable = dt.drawTable;
+var TextCell = require('../TextCell.js').TextCell;
+var drawTable = require('../DrawTable.js').drawTable;
 
 function checkerboard() {
   var rows = [];
@@ -50,11 +50,11 @@ function checkerboard() {
   return rows;
 }
 
-var expectedCheckerboard = 
+var expectedCheckerboard =
 `##    ##    ##
-   ##    ##   
+   ##    ##
 ##    ##    ##
-   ##    ##   
+   ##    ##
 ##    ##    ##`;
 describe("drawTable", function() {
   it("must draw the checkerboard correctly", function() {
