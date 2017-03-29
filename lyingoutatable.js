@@ -1,3 +1,10 @@
+/*var uc = require('./underlinedcell.js')
+var di = require('./drawIt.js')
+var dt = require('./DrawTable.js')
+var rt = require('./RtextCell.js')
+var tc = require('./TextCell.js')
+*/
+
 // Utils: Monkey Patching
 String.prototype.repeat = function(times) {
   var result = "";
@@ -35,19 +42,7 @@ function colWidths(rows) {
   });
 }
 
-  function drawRow(row, rowNum) {
-    var blocks = row.map((cell, colNum) => cell.draw(widths[colNum], heights[rowNum]));
-    return blocks[0].map((_, lineNo) => drawLine(blocks, lineNo)).join("\n");
-  }
-
-  return rows.map(drawRow).join("\n");
-}
-
-
 module.exports = {
-  drawIt: drawIt,
-  drawTable: drawTable,
-  TextCell: TextCell,
-  RTextCell: RTextCell,
-  UnderlinedCell: UnderlinedCell
+  rowHeights: rowHeights,
+  colWidths: colWidths
 };

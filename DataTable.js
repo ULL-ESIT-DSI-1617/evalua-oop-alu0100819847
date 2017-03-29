@@ -1,3 +1,8 @@
+var RTextCell = require('./RtextCell.js').RTextCell
+var TextCell = require('./TextCell.js').TextCell
+var UnderlinedCell = require('./underlinedcell.js').UnderlinedCell
+//String = require('./lyingoutatable.js').String
+//Array = require('./lyingoutatable.js').Array
 
 function dataTable(data) {
   var keys = Object.keys(data[0]);
@@ -19,9 +24,5 @@ function dataTable(data) {
 }
 
 module.exports = {
-  drawIt: drawIt,
-  drawTable: drawTable,
-  TextCell: TextCell,
-  RTextCell: RTextCell,
-  UnderlinedCell: UnderlinedCell
+  dataTable: dataTable
 };

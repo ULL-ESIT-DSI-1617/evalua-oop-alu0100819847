@@ -1,5 +1,7 @@
-var dt = require('DrawTable.js');
+var dt = require('./DrawTable.js');
+var dataTable = require('./dataTable.js').dataTable
 var drawTable = dt.drawTable
+
 function drawIt(data) {
   return drawTable(dataTable(data));
 }

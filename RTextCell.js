@@ -1,4 +1,5 @@
-var TextCell = require('TextCell.js')
+var tc = require('./TextCell.js')
+var TextCell = tc.TextCell
 // RTextCell
 function RTextCell(text) {
   TextCell.call(this, text);

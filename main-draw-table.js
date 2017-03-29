@@ -1,4 +1,4 @@
-var drawIt = require("./lyingoutatable.js").drawIt;
+var drawIt = require("./drawIt.js").drawIt;
 var MOUNTAINS = require("./mountains.json");
 
 console.log(
